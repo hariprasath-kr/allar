@@ -1,3 +1,100 @@
+*{
+
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+}
+.logo{
+  padding-top: 10px;
+}
+nav{
+
+  height: 80px;
+  width: 100%;
+}
+
+nav .ulu{
+  
+  float: right;
+  margin-right: 20px;
+}
+nav .ulu li{
+  display: inline-block;
+ 
+  margin: 0 5px;
+}
+nav .ulu li a{
+  color: #000000;
+  font-size: 17px;
+  padding: 7px 1px;
+  border-radius: 3px;
+
+}
+a.active,a:hover{
+ 
+  transition: .5s;
+}
+.checkbtn{
+  font-size: 30px;
+  
+  float: right;
+  line-height: 80px;
+  margin-right: 40px;
+  cursor: pointer;
+  display: none;
+}
+#check{
+  display: none;
+}
+@media (max-width: 952px){
+  label.logo{
+    font-size: 30px;
+    padding-left: 50px;
+  }
+  nav .ulu li a{
+    font-size: 16px;
+  }
+  .rt{
+    margin-top: 100px;
+    margin-left: 50px;
+  }
+}
+@media (max-width: 1092px){
+  .checkbtn{
+    display: block;
+  }
+  .ulu{
+    position: relative;
+    width: 100%;
+    background: rgba(255,255,255, 0.7);
+    
+    top: 80px;
+    left: -100%;
+    text-align: center;
+    transition: all .5s;
+  }
+  nav .ulu li{
+    display: block;
+    margin: 5px 0;
+    height: 50px;
+  }
+  nav .ulu li a{
+    font-size: 20px;
+  }
+  a:hover,a.active{
+    background: none;
+    
+  }
+  #check:checked ~ ul{
+    left: 0;
+  }
+  .logo{
+    padding-top: 20px;
+  }
+ 
+ 
+}
+
 
 *{
   
@@ -31,24 +128,21 @@
     padding: 2%;
     display: inline-block;
   }
-  .bodyy{
-   background-image: url("bg.jpg");
-   background-repeat: no-repeat;
-   background-size: cover;
-    margin-left: auto;
-    margin-right: auto;
-  }
 
+.alrico{
+  height: 10px;
+  width: 10px;
+}
   .bton{
     padding-bottom: 2%;
   }
   .contentt{
-    padding-top: 8%;
+   
+    padding-top: 4%;
    text-align: center;
    align-items: center;
-   width: 60%;
+   width: 50%;
    margin: auto;
-    font-family:Arial, Helvetica, sans-serif;
 
   }
 
@@ -62,12 +156,20 @@
    margin-bottom: 10%;
    margin-top: 10%;
   }  
+  .cnt{
+    margin-left: 9%;
+  }
+
+.icnn{
+  padding: 3%;
+}
   .roow{
     padding-left: 10%;
    
   }
-  .card-header{
-    background-color: black;
+  
+  .cpyr{
+    text-align: center;
   }
   .nav{
     transform: translateX(-6%);
@@ -75,4 +177,53 @@
   .nav li :nth-child(1){
     left: 0;
   }
-  
+  .inputt:active{
+    border-top-style: hidden;
+        border-right-style: hidden;
+        border-left-style: hidden;
+        border-bottom-style: groove;
+        opacity: 0.5;
+  }
+  .inputtt:active{
+
+    border-top-style: hidden;
+        border-right-style: hidden;
+        border-left-style: hidden;
+        border-bottom-style: groove;
+        opacity: 0.5;
+  }
+  .inp{
+    width: 100px;
+    border-radius: 5px;
+padding: 3px;
+    border: none;
+  }
+  .drp{
+     background-color: transparent;
+     border: none;
+     color: aliceblue;
+  }
+  .inputt{
+    border-top-style: hidden;
+        border-right-style: hidden;
+        border-left-style: hidden;
+        border-bottom-style: groove;
+        opacity: 0.5;
+        width: 180px;
+  }
+  .inputtt{
+        border-top-style: hidden;
+            border-right-style: hidden;
+            border-left-style: hidden;
+            border-bottom-style: groove;
+            opacity: 0.5;
+            width: 180px;
+      }
+  .ulu{
+    width: 70%;
+  }
+  .drp option{
+    background-color: #000000;
+    color: #ffffff;
+    
+  }
